@@ -1,0 +1,4 @@
+wsl -d $d -- bash -c "
+        grep -q '/workspace' /etc/fstab || \
+        echo '/mnt/d//workspace /workspace none bind 0 0' >> /etc/fstab
+    "
